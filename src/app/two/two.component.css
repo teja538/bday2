@@ -19,7 +19,7 @@ body{
     transform-style: preserve-3d;
     transform: rotateY(-360deg) translateZ(-300px);
     /* speed of rotation */
-    animation: animate 25s steps(1000,end) infinite;
+    animation: animate 45s steps(1000,end) infinite;
 
 }
 .single-img{
@@ -74,3 +74,120 @@ img:hover
         transform:rotateY(0deg);
     }
 }
+
+
+.wrapper1{
+    position:absolute;
+    /* circle size */
+    width: 120px; 
+    margin: 10px auto;
+    perspective: 1000px;
+    margin-top:10px;
+}
+
+.img-area1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(-360deg) translateZ(-300px);
+    /* speed of rotation */
+    animation: animate 15s steps(1000,end) infinite;
+
+}
+.single-img1{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 10px;
+    left: 10px;
+}
+
+.single-img1 img{
+    width:300px;
+    height: 200px;
+    border:5px solid black;
+}
+
+.single-img.img-one1{
+    transform: rotateY(0deg) translateZ(300px);
+}
+.single-img.img-two1{
+    transform: rotateY(60deg) translateZ(300px);
+}
+.single-img.img-three1{
+    transform: rotateY(120deg) translateZ(300px);
+}
+.single-img.img-four1{
+    transform: rotateY(180deg) translateZ(300px);
+}
+.single-img.img-five1{
+    transform: rotateY(240deg) translateZ(300px);
+}
+.single-img.img-six1{
+    transform: rotateY(300deg) translateZ(300px);
+}
+
+/* right side */
+.wrapper2{
+    position:absolute;
+    /* circle size */
+    left:1100px;
+    width: 120px; 
+    margin: 10px auto;
+    perspective: 1000px;
+    margin-top:10px;
+
+}
+
+.img-area2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(-360deg) translateZ(-300px);
+    /* speed of rotation */
+    animation: animate 15s steps(1000,end) infinite;
+
+}
+.single-img2{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 10px;
+    left: 10px;
+}
+
+.single-img2 img{
+    width:300px;
+    height: 200px;
+    border:5px solid black;
+}
+
+.single-img.img-one2{
+    transform: rotateY(0deg) translateZ(300px);
+}
+.single-img.img-two2{
+    transform: rotateY(60deg) translateZ(300px);
+}
+.single-img.img-three2{
+    transform: rotateY(120deg) translateZ(300px);
+}
+.single-img.img-four2{
+    transform: rotateY(180deg) translateZ(300px);
+}
+.single-img.img-five2{
+    transform: rotateY(240deg) translateZ(300px);
+}
+.single-img.img-six2{
+    transform: rotateY(300deg) translateZ(300px);
+}
+
+
+
+
+
+
+
+
+
