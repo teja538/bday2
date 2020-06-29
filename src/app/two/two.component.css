@@ -1,8 +1,76 @@
 body{
     margin: 0;
     padding: 0;
-    background: #000000;;
+    /* background:black; */
 }
+.bdimg{
+    position: absolute;
+    left: 1100px;
+    top: 20px;
+    filter:grayscale(30%);
+}
+
+.container{
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.container span{
+   
+    text-transform: uppercase;
+    display: block;
+}
+
+.text1{
+    color: brown;
+    font-size: 60px;
+    font-size: 400;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: white;
+    position: relative;
+/* name of animation(any) time nd how many times to repeat */
+    animation: text 3s 2;
+    /* animation-delay: 2s; */
+
+}
+
+.text2{
+    font-size: 25px;
+    color: darkblue;
+}
+
+@keyframes text{
+    0%{
+        color:white;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    40%{
+        letter-spacing: 15px;
+        margin-bottom: -40px;
+    }
+    60%{
+        letter-spacing: 35px;
+        margin-bottom: -40px;
+    }
+
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+
+
+
+
+
 .wrapper{
     position: relative;
     /* circle size */

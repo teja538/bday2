@@ -1,0 +1,256 @@
+.btn1{
+    position: absolute;
+    left: 855px;
+    top: 130px;
+    padding: 10px;
+    background-color: gold;
+    color: indigo;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.display1{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+}
+.display1:hover{
+    padding-left: 10%;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 60%;
+}
+
+.img1{
+    margin-right: -150px;
+    z-index: -2;
+    /* transform: rotateY(-30deg); */
+}
+.img3{
+    margin-left: -150px;
+    z-index: -1;
+    /* transform: rotateY(30deg); */
+
+}
+.display1:hover .img1{
+    margin-right: -50px;
+
+}
+.display1:hover .img3{
+    margin-left: -50px;
+}
+
+  .wrapper{
+      width: 208px;
+      height: 200px;
+      margin: 15% auto;
+      position: absolute;
+      left: 80%;
+
+  }
+
+  .box-area{
+      animation: animate 10s ease-in-out infinite;
+      transform-style: preserve-3d;
+      transform-origin: 100px 100px 0;
+  }
+  .box-area div{
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+  }
+
+  .box-area .box1{
+      background-image: url(../../assets/twoImg/img1GQ.jpg);
+      -webkit-background-size:cover;
+      background-size: cover;
+      background-position: center center;
+      transform: translateZ(100px);
+  }
+
+  .box-area .box2{
+    background-image: url(../../assets/twoImg/img1GQ.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.box-area .box3{
+    background-image: url(../../assets/twoImg/img1GQ.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+}
+.box-area .box4{
+    background-image: url(../../assets/twoImg/img1GQ.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+}
+.box-area .box5{
+    background-image: url(../../assets/twoImg/img1GQ.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+.box-area .box6{
+    background-image: url(../../assets/twoImg/img1GQ.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    transform:rotateX(-90deg) translateZ(100px);
+}
+@keyframes animate{
+    from,to{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16%{
+        transform: rotateY(-90deg);
+    }
+    33%{
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50%{
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66%{
+        transform: rotateY(-270deg) rotateZ(90deg);
+    }
+    83%{
+        transform: rotateX(90deg) ;
+    }
+}
+
+
+
+.blocks{
+    position: relative;
+    top: 250px;
+    left: 500px;
+}
+
+.blocks div{
+    width: 200px;
+    height: 25px;
+    padding: 10px;
+    color: white;
+    /* background-color:blueviolet; */
+    font-weight: bold;
+    position: relative;
+   
+    animation: mymove 5s infinite;
+  }
+  
+  #div1 {animation-timing-function: linear; text-align: center;background-color: purple}
+  #div2 {animation-timing-function: ease;text-align: center;background-color:darkgoldenrod;}
+  #div3 {animation-timing-function: ease-in;text-align: center;background-color: brown;}
+  #div4 {animation-timing-function: ease-out;text-align: center;background-color:rgb(93, 88, 109)}
+  #div5 {animation-timing-function: ease-in-out;text-align: center;background-color: green}
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 400px;}
+  }
+
+  .drop div{
+        width: 10px;
+        height: 10px;
+        /* background: red; */
+        margin-top: 130px;
+        position: absolute;
+        
+        left:300px;
+        /* animation: example 3s infinite;  */
+        animation-fill-mode: forwards;
+      }
+      .a0{
+        
+        margin-left: -20px;
+        animation: example 2.60s infinite; 
+        background-color: red;
+    }
+      .a1{
+        
+          margin-left: 10px;
+          animation: example 5s infinite; 
+          background-color:darkmagenta;
+      }
+      .a2{
+        margin-left: 50px;
+        background-color: red;
+        animation: example 1.75s infinite; 
+      }
+      .a3{
+        margin-left: 70px;
+        background-color:blue;
+        animation: example 4s infinite; 
+      }
+      .a4{
+        margin-left: 100px;
+        background-color:green;
+        animation: example 2s infinite; 
+      }
+      .a5{
+        margin-left: 140px;
+        background-color:black;
+        animation: example 3.5s infinite; 
+      }
+      .a6{
+        margin-left: 180px;
+        background-color: red;
+        animation: example 5s infinite; 
+      }
+      
+      @keyframes example {
+        from {top: 0px;}
+        to {top: 200px; background-color:yellow;}
+      }
+
+.blockgif
+{
+   position: absolute;
+   left: 300px;
+   top: 300px;
+
+}
+/* .b1{
+    height: 200px;
+    width: 200px;
+} */
+.b2{
+    height: 250px;
+    width: 250px;
+position: absolute;
+left:-60px;
+top:110px
+
+}
+
+.bdimg{
+   
+    height: 300px;
+    width: 300px;
+    border-radius: 0%;
+    position: absolute;
+    left: 1150px;
+    top: 20px;
+}
+
+.fte
+{
+    height: 300px;
+    width: 350px;
+    border-radius: 0%;
+    position: absolute;
+    left: 1050px;
+    top: 120px;
+}
+
