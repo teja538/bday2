@@ -30,8 +30,6 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-
-
 }
 
 .img1
@@ -51,3 +49,11 @@
     position: absolute;
     left: 150px;  
 }
+
+.sir
+{
+    position:absolute;
+    left: 180px;
+    top:-30px;    
+}
+

@@ -1,0 +1,173 @@
+section{
+    position: relative;
+    width: 100% ;
+    height: 500px;
+    background-color: blue;
+}
+section video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%; 
+    object-fit: cover;
+    filter: blur(10px);
+  }
+   .wish{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 300;
+      font-size: 27px;
+      padding-top: 50px;
+      color: rgb(77, 5, 5);
+      z-index: 2;
+  }
+section .box{
+    position: absolute;
+    top:100px;
+    left: 40%;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+}
+
+section .box div{
+position: absolute;
+top: 0;
+left: 0;
+width:100%;
+height: 100%;
+/* background-color: cyan; */
+transform-style: preserve-3d;
+transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px,-50px,150px);
+}
+
+section .box div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    display: block;
+    /* background: #8f0f0f; */
+    border: 1px solid rgba(0,0,0,0.1);
+    /* transform-style: preserve-3d; */
+    /* transform: ; */
+    }
+  
+    section .box div span video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:100%;
+        height: 100%; 
+        object-fit: cover;
+        filter: blur(0px);
+    }
+  
+    section .box div span:nth-child(1){
+        transform: rotateX(0deg) translate3d(0,0,150px);
+    }
+    section .box div span:nth-child(2){
+        transform: rotateY(90deg) translate3d(0,0,-150px);
+    }
+    section .box div span:nth-child(2) video{ 
+        transform: rotateY(180deg);
+    }
+    section .box div span:nth-child(3){
+        transform: rotateX(90deg) translate3d(0,0,150px);
+    }
+
+    .bw1
+    {
+        position: absolute;
+        left:1100px;
+        top: 10px;
+    }
+
+
+    
+/* css for balane */
+    .balance span{
+        width: 150px;
+        height: 150px;
+        border-radius:50% ;
+        background: rgb(127, 187, 187);
+        padding-top: -300px;
+        object-fit: cover;
+        /* background-position: center; */
+        background-size: 150px 150px;
+        background-repeat: no-repeat;
+        margin-left: 25px;
+    }
+    .balance{
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+    }
+    .balance span .con{
+        padding-top: 38%;
+        padding-left: 10%;
+        font-size: 24px;
+        font-family: cursive;
+        overflow: hidden;
+        text-align: center;
+    }
+ .balance span:nth-child(1){
+  background-image:url(../../assets/qimg/spirutual.JPG) ;
+  margin-top: -7%;
+  color: cornsilk;
+ 
+ }
+ .balance span:nth-child(2){
+ background-image:url(../../assets/qimg/education.JPG) ;
+ margin-top: 10%;
+ color:cornsilk;
+ }
+ .balance span:nth-child(3){
+ background-image:url(../../assets/qimg/family.JPG) ;
+ margin-top: -5%;
+ color: cornsilk;
+ 
+ }
+ .balance span:nth-child(4){
+ background-image:url(../../assets/qimg/success.JPG) ;
+ margin-top: 12%;
+ color: cornsilk;
+ 
+ }
+ .balance span:nth-child(5){
+ background-image:url(../../assets/qimg/smile.JPG) ;
+ margin-top: 4.2%;
+ color: cornsilk;
+ 
+ }
+ .balance span:nth-child(6){
+ background-image:url(../../assets/qimg/friends.JPG) ;
+ margin-top: -5.5%;
+ color: rgb(245, 241, 241);
+ }
+                   
+ .balance:hover span{
+ margin-top: 0%;
+ }
+ .content{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 32px;
+     color: black;
+     /* margin-top: -100px; */
+     text-align: center;
+ }
+ .bal:hover .c1{
+     display: none;
+     /* content: "With ur presence we xplore more"; */
+ 
+ }
+ .bal:hover:before{
+     /* display: none; */
+     content: "With ur presence we xplore more & stay balanced";
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 32px;
+     color: black;
+     /* text-align: center; */
+     padding-left: 15%;
+ }

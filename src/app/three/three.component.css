@@ -11,6 +11,8 @@
 
 
 .display1{
+    position: relative;
+    left: 200px;
     display: flex;
     flex-direction: row;
     padding-left: 20%;
@@ -42,6 +44,71 @@ img{
 .display1:hover .img3{
     margin-left: -50px;
 }
+
+.text1S
+{
+    width: 150px;
+    height: 220px;
+    border: solid 5px yellow;
+    -ms-transform: skew(10deg,10deg); /* IE 9 */
+    transform: skew(10deg,10deg); /* Standard syntax */
+    position: absolute;
+    left: 830px;
+    top: 50px;
+
+}
+.text1S h3{
+    padding: 10px;
+    text-shadow:5px 5px 4px yellow;
+    animation: text 3s;
+}
+@keyframes text{
+    0%{
+        letter-spacing: 0.5px;
+        /* margin-bottom: -40px; */
+    }
+    /* 40%{
+        letter-spacing: 2px;
+    }
+    60%{
+        letter-spacing: 1.5px;
+    } */
+    85%{
+        letter-spacing: 0.75px;
+        /* margin-bottom: -40px; */
+    }
+}
+
+
+.feth1
+{
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top:20px;
+    left: 20px;
+    /* border-radius: 0%; */
+}
+.feth2
+{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top:270px;
+    left: 20px;
+    /* border-radius: 0%; */
+}
+
+.feth3
+{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top:480px;
+    left: 20px;
+    /* border-radius: 0%; */
+}
+
 
   .wrapper{
       width: 208px;
@@ -160,6 +227,12 @@ img{
     to {left: 400px;}
   }
 
+  .drop{
+      position: absolute;
+      left:300px;
+      top: 10px;
+  }
+
   .drop div{
         width: 10px;
         height: 10px;
@@ -208,6 +281,62 @@ img{
         background-color: red;
         animation: example 5s infinite; 
       }
+      .aa0{
+        
+        margin-left: -20px;
+        animation: example 3.60s infinite; 
+        background-color: red;
+    }
+      .aa1{
+        
+          margin-left: -10px;
+          animation: example 1.76s infinite; 
+          background-color:darkmagenta;
+      }
+      .aa2{
+        margin-left: -50px;
+        background-color: red;
+        animation: example 1.75s infinite; 
+      }
+      .aa3{
+        margin-left: -70px;
+        background-color:blue;
+        animation: example 4.25s infinite; 
+      }
+      .aa4{
+        margin-left: -100px;
+        background-color:green;
+        animation: example 5s infinite; 
+      }
+      .aa5{
+        margin-left: -140px;
+        background-color:black;
+        animation: example 2.45s infinite; 
+      }
+      .aa6{
+        margin-left: -180px;
+        background-color: red;
+        animation: example 3.75s infinite; 
+      }
+      .aa7{
+        margin-left: -220px;
+        background-color: red;
+        animation: example 1.75s infinite; 
+      }
+      .aa8{
+        margin-left: -260px;
+        background-color: red;
+        animation: example 2.35s infinite; 
+      }
+      .aa9{
+        margin-left: -180px;
+        background-color: red;
+        animation: example 3.05s infinite; 
+      }
+
+
+
+
       
       @keyframes example {
         from {top: 0px;}
@@ -216,6 +345,7 @@ img{
 
 .blockgif
 {
+   
    position: absolute;
    left: 300px;
    top: 300px;
@@ -226,6 +356,7 @@ img{
     width: 200px;
 } */
 .b2{
+     border-radius: 0%;
     height: 250px;
     width: 250px;
 position: absolute;
