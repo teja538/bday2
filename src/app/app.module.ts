@@ -7,6 +7,7 @@ import { OneComponent } from './one/one.component';
 import { TwoComponent } from './two/two.component';
 import { ThreeComponent } from './three/three.component';
 import { FourComponent } from './four/four.component';
+import { FiveComponent } from './five/five.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FourComponent } from './four/four.component';
     OneComponent,
     TwoComponent,
     ThreeComponent,
-    FourComponent
+    FourComponent,
+    FiveComponent
   ],
   imports: [
     BrowserModule,
