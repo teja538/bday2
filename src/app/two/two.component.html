@@ -6,13 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <span class="text1">Welcome to ...........</span>
-        <span class="text2">lets spread positivity</span>
+    <button *ngIf="before" class="btn1" (click)="songcond1()" >click here</button>
+
+  <div *ngIf="before" class="before">
+      <img class="bef1" src="../assets/twoImg/bef4.gif" alt="">
+      <img class="bef2" src="../assets/twoImg/bef2.jpg" alt="">
+      <img class="bef3" src="../assets/twoImg/bef3.jpg" alt="">
+
+  </div>
+  
+
+    <div *ngIf="show" class="container">
+        <span class="text1">You are our inspiration</span>
+        <span class="text2">forever</span>
     </div>
 
-    <img class="bdimg" src="../assets/twoImg/bw3.gif" alt="">
-    
+<!-- <audio src=""></audio> -->
+
+    <div *ngIf="show" class="q1">
+        <p>If u get another work it doesn't mean<br> leave the existing work...  Nd do that.......
+            It means  <br>u hv to stretch ur time nd manage to do the both with 💯</p>
+            <p class="name">-Sudershan</p>
+    </div>
+
+    <img *ngIf="show" class="bdimg" src="../assets/twoImg/bw3.gif" alt="">
+    <img *ngIf="show" class="name1" src="../assets/twoImg/name1.png" alt="">
+    <div *ngIf="show" class="nametext">
+        <h2 style="color:gold">Sudarshan <br>Bhayya</h2>
+        
+    </div>
     <div class="wrapper">
         <div class="img-area">
             <div class="single-img img-one">
@@ -36,7 +58,7 @@
         </div>
     </div>
 
-    <div class="wrapper1">
+    <div *ngIf="show" class="wrapper1">
         <p>r</p>
         <div class="img-area1">
             <div class="single-img img-one1">
@@ -61,7 +83,7 @@
     </div>
 
 
-    <div class="wrapper2">
+    <div *ngIf="show" class="wrapper2">
         <p>r</p>
         <div class="img-area2">
             <div class="single-img img-one2">
@@ -85,6 +107,10 @@
         </div>
     </div>
 
+    <!-- <audio controls preload loop autoplay id="myAudio" class="aud">
+        <source src="../assets/aud/behti.mp3" type="audio/mpeg">
+         Your browser does not support the HTML5 audio tag.
+    </audio> -->
 
 
 </body>

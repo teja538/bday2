@@ -45,22 +45,42 @@ img{
     margin-left: -50px;
 }
 
-.text1S
+/* .text1S
 {
     width: 150px;
     height: 220px;
     border: solid 5px yellow;
-    -ms-transform: skew(10deg,10deg); /* IE 9 */
-    transform: skew(10deg,10deg); /* Standard syntax */
+    -ms-transform: skew(10deg,10deg);
+    transform: skew(10deg,10deg); 
     position: absolute;
     left: 830px;
     top: 50px;
 
+} */
+.q1
+{
+    width: 210px;
+    height: 240px;
+    position: absolute;
+    left: 780px;
+    top: 50px;
+    border-radius: 0%;
+
 }
+
 .text1S h3{
+    position: absolute;
+    left: 820px;
+    top: 80px;
     padding: 10px;
+    /* padding-left: 10px; */
     text-shadow:5px 5px 4px yellow;
     animation: text 3s;
+}
+.text1S p{
+    position: absolute;
+    left: 820px;
+    top: 200px;
 }
 @keyframes text{
     0%{
@@ -200,7 +220,7 @@ img{
 
 .blocks{
     position: relative;
-    top: 250px;
+    top: 215px;
     left: 500px;
 }
 
@@ -383,5 +403,11 @@ top:110px
     position: absolute;
     left: 1050px;
     top: 120px;
+}
+
+.aud
+{
+    position: absolute;
+    left: 900px;
 }
 

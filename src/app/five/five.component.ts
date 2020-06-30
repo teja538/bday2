@@ -16,7 +16,7 @@ export class FiveComponent implements OnInit {
   public interval;
   public c;
   public d=-1;
-    public timeLeft: number = 10;
+    public timeLeft: number = 20;
   startTimer() {
     this.audio = new Audio();
     this.audio.src = "../assets/five/Sir.mp3";
@@ -46,7 +46,6 @@ export class FiveComponent implements OnInit {
       }
     },1000)
   }
-
 
   ngOnInit(): void {
   }

@@ -11,6 +11,7 @@ export class OneComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
   catimg=false;
   ibtn2=false;
@@ -18,12 +19,17 @@ export class OneComponent implements OnInit {
   sk1=false;
   sk2=false;
   sk3=false;
+  audio;
 
 showImage(){
    this.catimg=true
    this.ibtn2=true;
     // document.getElementById('loadingImage2').style.visibility="visible";
     // document.getElementById('ibtn2').style.visibility="visible";
+    this.audio = new Audio();
+    this.audio.src = "../assets/aud/behti.mp3";
+    this.audio.load();
+    this.audio.play();
 }
 
 showspk()
@@ -39,11 +45,18 @@ showspk()
 
     // document.getElementById('ibtn3').style.visibility="visible";
 }
+ngOnDestroy() {
+  // destroy audio here
+  if(this.audio) {
+    this.audio.pause();
+    this.audio = null;
+  }
+}
 
-next1()
-{
+// next1()
+// {
   
 
-}
+// }
 
 }
