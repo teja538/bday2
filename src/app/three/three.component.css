@@ -67,6 +67,31 @@ img{
     border-radius: 0%;
 
 }
+.q2
+{
+    position: absolute;
+    left: 550px;
+    top: 370px;
+}
+.q2 h3
+{
+    position: absolute;
+    top:12px;
+    left: 18px;
+    text-shadow:5px 5px 4px yellow;
+}
+.q2 p{
+    position: absolute;
+    top:155px;
+    left: 70px;
+
+}
+.q2img
+{
+    width: 190px;
+    height: 220px;
+    border-radius: 0%;
+}
 
 .text1S h3{
     position: absolute;
@@ -152,7 +177,7 @@ img{
   }
 
   .box-area .box1{
-      background-image: url(../../assets/twoImg/img1GQ.jpg);
+      background-image: url(../../assets/twoImg/wwpr8.jpg);
       -webkit-background-size:cover;
       background-size: cover;
       background-position: center center;
@@ -160,7 +185,7 @@ img{
   }
 
   .box-area .box2{
-    background-image: url(../../assets/twoImg/img1GQ.jpg);
+    background-image: url(../../assets/twoImg/wpr2.jpg);
     -webkit-background-size:cover;
     background-size: cover;
     background-position: center center;
@@ -168,28 +193,28 @@ img{
 }
 
 .box-area .box3{
-    background-image: url(../../assets/twoImg/img1GQ.jpg);
+    background-image: url(../../assets/twoImg/wwpr12.jpg);
     -webkit-background-size:cover;
     background-size: cover;
     background-position: center center;
     transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
 }
 .box-area .box4{
-    background-image: url(../../assets/twoImg/img1GQ.jpg);
+    background-image: url(../../assets/twoImg/wwpr14.jpg);
     -webkit-background-size:cover;
     background-size: cover;
     background-position: center center;
     transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
 }
 .box-area .box5{
-    background-image: url(../../assets/twoImg/img1GQ.jpg);
+    background-image: url(../../assets/twoImg/wwpr11.jpg);
     -webkit-background-size:cover;
     background-size: cover;
     background-position: center center;
     transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
 }
 .box-area .box6{
-    background-image: url(../../assets/twoImg/img1GQ.jpg);
+    background-image: url(../../assets/six/b1.jpg);
     -webkit-background-size:cover;
     background-size: cover;
     background-position: center center;
@@ -409,5 +434,18 @@ top:110px
 {
     position: absolute;
     left: 900px;
+}
+
+.btnnext
+{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background-color:rgb(252, 228, 10);
+    /* color: white; */
+    position: absolute;
+    top:50px;
+    left: 1100px;
+
 }
 

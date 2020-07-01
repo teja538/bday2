@@ -1,3 +1,142 @@
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+}
+.one{
+  display: flex;
+  flex-direction: row;
+}
+
+.show1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #010615;
+}
+.box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:40px ;
+  background: #060c21;
+  transition: 0.5s;
+}
+.box:hover{
+  height: 400px;
+}
+
+.box .imgBx{
+position: relative;
+top:0;
+left:0;
+width:100%;
+height:100%;
+padding: 10px;
+box-sizing: border-box;
+}
+.box .imgBx img{
+  max-width: 100%;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+.box:hover .imgBx img{
+  opacity: 1;
+}
+.box:before{
+  content:'';
+  position:absolute;
+  top:-2px;
+  left:-2px; 
+   right:-2px;
+   bottom:-2px;
+}
+.box:after{
+  content:'';
+  position:absolute;
+  top:-2px;
+  left:-2px; 
+   right:-2px;
+   bottom:-2px;
+   background: #fff;
+   z-index:-2;
+   filter:blur(40px);
+}
+.box:before,
+.box:after{
+  background: linear-gradient(235deg,#89ff00,#010615,#00bcd4);
+}
+.box:nth-child(2):before,
+.box:nth-child(2):after{
+  background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
+}
+.box:nth-child(3):before,
+.box:nth-child(3):after{
+  background: linear-gradient(235deg,#772aff,#010615,#2196f3);
+}
+
+.box .content{
+  position: absolute;
+  bottom:0;
+  left:10px;
+  right:10px;
+   bottom:10px;
+   height: 90px;
+   background:rbga(0,0,0,0.4);
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.box:hover .content{
+  opacity: 1;
+}
+.box .content h2{
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.box .content h2 span{
+  font-size: 14px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+
+
+.two{
+  background-color: wheat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .b{
     position: fixed;
    height:100vh;
@@ -140,8 +279,8 @@ html, body {
 
 .card {
   position: relative;
-  width: 300px;
-  height: 425px;
+  width: 310px;
+  height: 415px;
   border: 10px solid darkmagenta ;
   margin: 50px auto 0 auto;
   box-shadow: inset 10px 0px 15px 0px rgba(0,0,0,0.1);
@@ -161,7 +300,7 @@ html, body {
 .card .text-container #head {
   font-family: 'Nobile', sans-serif;
   font-size: 1.5em;
-  margin: 60px auto 60px auto;
+  /* margin: 60px auto 60px auto; */
 }
 
 .card p {
@@ -171,7 +310,7 @@ html, body {
   color: #331717;
   font-style: italic;
   text-align: center;
-  margin: 30px auto 0px auto;
+  /* margin: 30px auto 0px auto; */
 }
 
 .card .front { 
@@ -452,4 +591,18 @@ $chocolate: #553c13;
             0 0 20px rgba(orange, 0.5),
             0 0 60px rgba(orange, 0.5),
             0 0 80px rgba(orange, 0.5) }
+}
+
+.shape-block h2
+{
+  
+  text-align: center;
+  
+  text-shadow:5px 5px 4px  darkmagenta;
+}
+
+.shape-block h1
+{
+   margin-left: 60px;
+  text-shadow:5px 5px 4px palegreen;
 }

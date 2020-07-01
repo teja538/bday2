@@ -169,6 +169,7 @@ body{
 }
 
 .single-img.img-one{
+    filter:grayscale(0%);
     transform: rotateY(0deg) translateZ(300px);
 }
 .single-img.img-two{
@@ -188,7 +189,7 @@ body{
 }
 
 img{
-    filter:grayscale(90%);
+    filter:grayscale(30%);
     transition: 1s;
     cursor: pointer;
 }
@@ -312,6 +313,18 @@ img:hover
 }
 .single-img.img-six2{
     transform: rotateY(300deg) translateZ(300px);
+}
+
+.btnnext
+{
+    border-radius: 5px;
+    border: none;
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    left: 1150px;
+    top:210px;
 }
 
 

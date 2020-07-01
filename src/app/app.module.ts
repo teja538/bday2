@@ -9,6 +9,7 @@ import { ThreeComponent } from './three/three.component';
 import { FourComponent } from './four/four.component';
 import { FiveComponent } from './five/five.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +18,7 @@ import { FiveComponent } from './five/five.component';
     ThreeComponent,
     FourComponent,
     FiveComponent
+  
   ],
   imports: [
     BrowserModule,

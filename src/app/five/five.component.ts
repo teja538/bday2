@@ -9,6 +9,10 @@ export class FiveComponent implements OnInit {
   constructor() {
     this.startTimer();
    }
+
+   public show1=true;
+   public show2=false;
+   public btnshow=true;
    title = 'ecom';
   public audio;
   public val=true;
@@ -17,6 +21,13 @@ export class FiveComponent implements OnInit {
   public c;
   public d=-1;
     public timeLeft: number = 20;
+
+    showfun()
+    {
+     this.show1=false; 
+     this.btnshow=false; 
+     this.show2=true;
+    }
   startTimer() {
     this.audio = new Audio();
     this.audio.src = "../assets/five/Sir.mp3";

@@ -15,6 +15,7 @@ const routes: Routes = [
   {path:"three",component:ThreeComponent },
   {path:"four",component:FourComponent },
   {path:"five",component:FiveComponent },
+ 
 
 ];
 

@@ -27,7 +27,7 @@ showImage(){
     // document.getElementById('loadingImage2').style.visibility="visible";
     // document.getElementById('ibtn2').style.visibility="visible";
     this.audio = new Audio();
-    this.audio.src = "../assets/aud/behti.mp3";
+    this.audio.src = "../assets/aud/hbd.mp3";
     this.audio.load();
     this.audio.play();
 }

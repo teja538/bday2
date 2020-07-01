@@ -171,3 +171,15 @@ section .box div span{
      /* text-align: center; */
      padding-left: 15%;
  }
+
+
+ .btnnext
+ {
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    background-color:rgb(252, 228, 10);
+     position: absolute;
+     left:1420px;
+     top:210px;
+ }
